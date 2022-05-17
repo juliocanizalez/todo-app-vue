@@ -1,10 +1,5 @@
 <template>
-  <h5
-    class="no-margin"
-    v-if="getTodoList.length > 0"
-  >
-    TODO List
-  </h5>
+  <h5 v-if="getTodoList.length > 0">TODO List</h5>
   <ListElement
     v-for="item in getTodoList"
     :key="item.id"
@@ -12,12 +7,7 @@
     :id="item.id"
     isTodo
   />
-  <h5
-    class="no-margin"
-    v-if="getDoneList.length > 0"
-  >
-    Done
-  </h5>
+  <h5 v-if="getDoneList.length > 0">Done</h5>
   <ListElement
     v-for="item in getDoneList"
     :key="item.id"

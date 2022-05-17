@@ -2,7 +2,7 @@
   <q-page class="flex column items-center">
     <TextInput
       v-bind="textInputProps"
-      class="q-pt-md"
+      class="q-mt-lg"
     />
     <TaskList />
   </q-page>
