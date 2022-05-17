@@ -1,0 +1,37 @@
+// app global css in SCSS form
+.active-menu {
+  color: $text-color-white;
+  background-color: $primary;
+
+  & .text-caption {
+    color: $text-color-white-secondary !important;
+  }
+}
+
+.width-60-percent {
+  width: 60%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+.element-list {
+  display: flex;
+  width: 40%;
+
+  &__buttons {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.about-card {
+  width: 50%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
